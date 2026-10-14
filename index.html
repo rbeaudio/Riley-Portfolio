@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Riley Beaudion Portfolio</title><meta name="description" content="Mechanical engineering student at Stevens Institute of Technology. Projects, CAD models and experience."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Newsreader:opsz,wght@6..72,400..600&display=swap" rel="stylesheet"><style>
+:root{--paper:#f5f2ec;--card:#fffdf9;--ink:#1c1b19;--muted:#5c5750;--line:#ddd6ca;--accent:#b4472b;--green:#2f4b45;--head:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;--body:"Newsreader",Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--paper:#161512;--card:#1f1d19;--ink:#efebe3;--muted:#a79f93;--line:#3a362f;--accent:#e07a5a;--green:#8fb8ad}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:1.1rem;line-height:1.65}
+a{color:var(--accent)}a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1020px;margin:0 auto;padding:0 1.4rem}
+h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0}
+nav{border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-top:.9rem;padding-bottom:.9rem;flex-wrap:wrap}
+nav strong{font-family:var(--head)}nav strong a{color:inherit;text-decoration:none}
+nav ul{display:flex;gap:1.1rem;list-style:none;margin:0;padding:0;overflow-x:auto;white-space:nowrap}
+nav ul a{font-family:var(--head);font-weight:500;font-size:.95rem;color:var(--ink);text-decoration:none}nav ul a:hover{color:var(--accent)}
+.hero{padding:4rem 0 3rem}
+.hero h1{font-size:clamp(2.8rem,10vw,5.6rem);font-weight:800;letter-spacing:-.03em}
+.hero .role{font-family:var(--head);font-size:1.25rem;font-weight:500;color:var(--green);margin:1rem 0 .4rem}
+.hero p{max-width:36rem;color:var(--muted);margin:0 0 1.5rem}
+.btns{display:flex;gap:.8rem;flex-wrap:wrap}
+.btn{font-family:var(--head);font-weight:600;padding:.65rem 1.15rem;border:2px solid var(--ink);color:var(--ink);text-decoration:none;border-radius:3px}
+.btn.primary{background:var(--ink);color:var(--paper)}.btn:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+section{padding:3.2rem 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(1.8rem,4vw,2.4rem);font-weight:750;margin-bottom:1.5rem}
+.card-link{display:grid;grid-template-columns:240px 1fr;gap:1.4rem;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);margin-bottom:1.2rem;border-radius:3px;overflow:hidden}
+.card-link:hover{border-color:var(--accent)}.card-link img{width:100%;height:100%;min-height:170px;object-fit:cover;display:block}
+.card-link .t{padding:1.2rem 1.4rem 1.2rem 0}.card-link h3{font-size:1.4rem}.card-link p{margin:.5rem 0 0}
+.org{font-family:var(--head);color:var(--green);font-weight:500}.more{font-family:var(--head);font-weight:600;color:var(--accent);display:inline-block;margin-top:.6rem}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem}
+.gallery figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:3px;overflow:hidden}
+.gallery img{width:100%;display:block;aspect-ratio:1;object-fit:contain;background:#fff;border:0}
+.gallery figcaption{font-family:var(--head);font-size:.9rem;padding:.5rem .8rem;background:var(--card);border-top:1px solid var(--line);margin:0;color:var(--ink)}
+.gallery .wide{grid-column:span 2}.gallery .wide img{aspect-ratio:auto}
+.entry{background:var(--card);border:1px solid var(--line);padding:1.3rem 1.6rem;margin-bottom:1.1rem;border-radius:3px}
+.entry header{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:baseline;margin-bottom:.5rem}
+.entry h3{font-size:1.25rem}.when{font-family:var(--head);color:var(--muted);font-size:.9rem}.entry ul{margin:.4rem 0 0;padding-left:1.2rem}.entry li{margin-bottom:.35rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.skills h3{font-size:1.05rem;margin:.8rem 0 .2rem}
+footer{border-top:1px solid var(--line);padding:1.4rem 0;color:var(--muted);font-family:var(--head);font-size:.9rem}
+.proj-head{padding:2rem 0}.proj-head h1{font-size:clamp(2.2rem,6vw,3.5rem);font-weight:800;letter-spacing:-.02em;margin:.5rem 0 .8rem}
+.proj-head p{max-width:42rem;color:var(--muted);margin:0}.back{font-family:var(--head);font-weight:600;text-decoration:none}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1rem;margin:1.8rem 0;font-family:var(--head)}
+.facts div{border-left:3px solid var(--accent);padding-left:.9rem}.facts b{display:block;font-size:.85rem;font-weight:600;color:var(--muted)}
+figure{margin:1rem 0}figure img{max-width:100%;height:auto;display:block;border:1px solid var(--line);background:#fff}
+figcaption{font-family:var(--head);font-size:.88rem;color:var(--muted);margin-top:.4rem}
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;align-items:start}
+.prose p{max-width:44rem;margin:0 0 1rem}
+@media (max-width:760px){.card-link,.two{grid-template-columns:1fr}.card-link .t{padding:0 1.2rem 1.2rem}.card-link img{height:200px}.hero{padding:2rem 0}.gallery .wide{grid-column:auto}}
+</style></head><body><nav><div class="wrap"><strong><a href="index.html">Riley Beaudion</a></strong><ul><li><a href="index.html#projects">Projects</a></li><li><a href="index.html#cad">CAD</a></li><li><a href="index.html#experience">Experience</a></li><li><a href="index.html#contact">Contact</a></li></ul></div></nav><header class="hero"><div class="wrap"><h1>Riley Beaudion</h1><div class="role">Mechanical Engineering student, Stevens Institute of Technology</div><p>Hoboken, New Jersey. Expected graduation May 2029. SolidWorks, C++ and hands-on team projects, from an autonomous rover to a self-watering plant system.</p><div class="btns"><a class="btn primary" href="#projects">See my projects</a><a class="btn" href="Riley_Beaudion_Resume.pdf">Resume (PDF)</a><a class="btn" href="https://www.linkedin.com/in/riley-beaudion-599a6838a" rel="noopener">LinkedIn</a></div></div></header><main>
+<section id="projects"><div class="wrap"><h2>Projects</h2>
+<a class="card-link" href="projects/ultrasonic-rover.html"><img src="images/r-side.jpg" alt="Ultrasonic rover with its 3D printed sensor mount"><div class="t"><h3>Ultrasonic Rover</h3><span class="org">Group L1-4, ENGR 112</span><p>An autonomous rover with a custom 3D printed attachment that navigates to four waypoints using live coordinates over MQTT. It finished the final course in 1 minute 37 seconds with zero collisions.</p><span class="more">View project details</span></div></a>
+<a class="card-link" href="projects/smart-watering-system.html"><img src="images/w-device.jpg" alt="Smart watering system with pump and tubing"><div class="t"><h3>Smart Watering System</h3><span class="org">Group N5, ENGR 111 L</span><p>A sensor-based system that measures soil moisture, light, temperature and humidity, waters a plant automatically, and uploads data every ten minutes. I led circuit building and testing.</p><span class="more">View project details</span></div></a></div></section>
+<section id="cad"><div class="wrap"><h2>CAD models</h2><div class="gallery"><figure><img src="images/bowl.jpg" alt="SolidWorks model: Bowl" loading="lazy"><figcaption>Bowl</figcaption></figure><figure><img src="images/candleholder.jpg" alt="SolidWorks model: Candleholder" loading="lazy"><figcaption>Candleholder</figcaption></figure><figure><img src="images/chair.jpg" alt="SolidWorks model: Chair assembly" loading="lazy"><figcaption>Chair assembly</figcaption></figure><figure><img src="images/lighthouse.jpg" alt="SolidWorks model: Lighthouse" loading="lazy"><figcaption>Lighthouse</figcaption></figure><figure><img src="images/pan.jpg" alt="SolidWorks model: Pan" loading="lazy"><figcaption>Pan</figcaption></figure><figure><img src="images/trammel.jpg" alt="SolidWorks model: Trammel" loading="lazy"><figcaption>Trammel</figcaption></figure><figure class="wide"><img src="images/flask-drawing.jpg" alt="SolidWorks drawing of a flask with section and detail views" loading="lazy"><figcaption>Flask: dimensioned drawing with section and detail views</figcaption></figure></div></div></section>
+<section id="experience"><div class="wrap"><h2>Experience</h2>
+<article class="entry"><header><div><h3>Construction Inspector Intern</h3><span class="org">Elevation Land Solutions, Houston, TX</span></div><span class="when">May 2026 to August 2026</span></header><ul><li>Interpreted engineering drawings and project specifications to support construction inspection activities.</li><li>Prepared engineering project deliverables and technical documentation.</li><li>Participated in design review and project coordination on land development projects.</li><li>Worked alongside licensed engineering professionals to support project execution.</li></ul></article>
+<article class="entry"><header><div><h3>Sports Photographer and Videographer</h3><span class="org">Stevens Institute of Technology Athletics Department</span></div><span class="when">September 2026 to present</span></header><ul><li>Photograph and video athletic events for the Stevens Athletics Department.</li><li>Create video mixtapes and edits for social media, and photo collages.</li></ul></article></div></section>
+<section id="leadership"><div class="wrap"><h2>Activities and leadership</h2>
+<article class="entry"><header><div><h3>Programs Chair</h3><span class="org">National Society of Black Engineers</span></div><span class="when">April 2026 to present</span></header><ul><li>Coordinate professional development and networking events with student leaders and industry representatives.</li><li>Manage logistics and planning for chapter programming and support member engagement.</li></ul></article>
+<article class="entry"><header><div><h3>Historian</h3><span class="org">Black Student Union</span></div><span class="when">September 2025 to present</span></header><ul><li>Maintain organizational records and event documentation, and develop media content highlighting chapter activities.</li></ul></article>
+<article class="entry"><header><div><h3>Youth Leader</h3><span class="org">Young Life</span></div><span class="when">August 2025 to present</span></header><ul><li>Facilitate inclusive, supportive environments that motivate youth and foster active participation.</li></ul></article></div></section>
+<section id="skills"><div class="wrap two"><div class="skills"><h2>Skills</h2><h3>Engineering software</h3>SolidWorks<h3>Programming</h3>C++<h3>Productivity tools</h3>Microsoft Excel, Microsoft PowerPoint</div>
+<div><h2>Education</h2><article class="entry"><h3>Stevens Institute of Technology</h3><span class="org">Bachelor of Mechanical Engineering</span><p class="when">Hoboken, NJ. Expected May 2029</p></article></div></div></section>
+<section id="contact"><div class="wrap"><h2>Contact</h2><p>Reach out about internships, projects or engineering opportunities.</p><div class="btns"><a class="btn primary" href="mailto:Rbeaudio@stevens.edu">Email me</a><a class="btn" href="https://www.linkedin.com/in/riley-beaudion-599a6838a" rel="noopener">LinkedIn</a><a class="btn" href="Riley_Beaudion_Resume.pdf">Resume (PDF)</a></div></div></section>
+</main><footer><div class="wrap">Riley Beaudion, Hoboken, NJ</div></footer></body></html>

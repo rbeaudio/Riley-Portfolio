@@ -43,14 +43,13 @@ figure{margin:1rem 0}figure img{max-width:100%;height:auto;display:block;border:
 figcaption{font-family:var(--head);font-size:.88rem;color:var(--muted);margin-top:.4rem}
 .figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;align-items:start}
 .prose p{max-width:44rem;margin:0 0 1rem}
-.hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:2.5rem;align-items:center}
-.hero-links{display:flex;flex-direction:column;align-items:center;gap:1.2rem}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:2.2rem}
+.hero-links{display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:flex-start;align-items:flex-start;gap:2.6rem}
 .hero-links a{display:block;text-decoration:none;color:var(--ink);text-align:center;font-family:var(--head);font-weight:600}
 .hero-links span{display:block;margin-top:.5rem}
-.li-card img{width:170px;height:170px;border-radius:50%;object-fit:cover;border:3px solid var(--line);display:block;margin:0 auto;transition:border-color .2s}
-.doodle{width:140px;height:140px;color:var(--doodle);display:block;margin:0 auto;transition:color .2s}
-.hero-links a.mail-card{display:flex;align-items:center;gap:.7rem}.hero-links .mail-card span{margin-top:0}
-.mail-icon{width:44px;height:44px;color:var(--doodle);flex:none;transition:color .2s}
+.li-card img{width:150px;height:150px;border-radius:50%;object-fit:cover;border:3px solid var(--line);display:block;margin:0 auto;transition:border-color .2s}
+.doodle{width:150px;height:150px;color:var(--doodle);display:block;margin:0 auto;transition:color .2s}
+.mail-icon{width:150px;height:150px;color:var(--doodle);display:block;margin:0 auto;transition:color .2s}
 .hero-links a:hover span,.res-card:hover .doodle,.mail-card:hover .mail-icon{color:var(--accent)}
 .li-card:hover img{border-color:var(--accent)}
 @media (max-width:760px){
@@ -59,7 +58,7 @@ body{font-size:1.02rem;line-height:1.6;-webkit-text-size-adjust:100%}
 nav .wrap{flex-direction:column;align-items:flex-start;gap:.35rem;padding-top:.7rem;padding-bottom:.7rem}
 nav ul{max-width:100%;gap:1.3rem;padding-bottom:.2rem}nav ul a{display:inline-block;padding:.35rem 0}
 .hero{padding:1.8rem 0 2rem}.hero h1{font-size:clamp(2.5rem,13vw,3.4rem)}.hero .role{font-size:1.1rem}
-.hero-grid{grid-template-columns:1fr;gap:1.6rem}.hero-links{flex-direction:row;flex-wrap:wrap;justify-content:flex-start;align-items:flex-start;gap:1.2rem 1.8rem}.li-card img{width:112px;height:112px}.doodle{width:112px;height:112px}.hero-links a.mail-card{flex-basis:100%}.hero-links span{font-size:.9rem}
+.hero-grid{gap:1.4rem}.hero-links{justify-content:space-between;gap:.6rem}.hero-links a{flex:1;min-width:0}.li-card img{width:92px;height:92px}.doodle,.mail-icon{width:92px;height:92px}.hero-links span{font-size:.85rem}
 .btns{flex-direction:column}.btn{text-align:center;padding:.8rem 1rem;width:100%}
 section{padding:2.2rem 0}
 .card-link,.two{grid-template-columns:1fr}.card-link .t{padding:0 1.1rem 1.2rem}.card-link img{height:190px;min-height:0}

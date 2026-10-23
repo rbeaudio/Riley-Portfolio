@@ -43,7 +43,21 @@ figure{margin:1rem 0}figure img{max-width:100%;height:auto;display:block;border:
 figcaption{font-family:var(--head);font-size:.88rem;color:var(--muted);margin-top:.4rem}
 .figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;align-items:start}
 .prose p{max-width:44rem;margin:0 0 1rem}
-@media (max-width:760px){.card-link,.two{grid-template-columns:1fr}.card-link .t{padding:0 1.2rem 1.2rem}.card-link img{height:200px}.hero{padding:2rem 0}.gallery .wide{grid-column:auto}}
+@media (max-width:760px){
+body{font-size:1.02rem;line-height:1.6;-webkit-text-size-adjust:100%}
+.wrap{padding:0 1.1rem}
+nav .wrap{flex-direction:column;align-items:flex-start;gap:.35rem;padding-top:.7rem;padding-bottom:.7rem}
+nav ul{max-width:100%;gap:1.3rem;padding-bottom:.2rem}nav ul a{display:inline-block;padding:.35rem 0}
+.hero{padding:1.8rem 0 2rem}.hero h1{font-size:clamp(2.5rem,13vw,3.4rem)}.hero .role{font-size:1.1rem}
+.btns{flex-direction:column}.btn{text-align:center;padding:.8rem 1rem;width:100%}
+section{padding:2.2rem 0}
+.card-link,.two{grid-template-columns:1fr}.card-link .t{padding:0 1.1rem 1.2rem}.card-link img{height:190px;min-height:0}
+.gallery{grid-template-columns:repeat(2,1fr);gap:.7rem}.gallery .wide{grid-column:1/-1}
+.gallery figcaption{font-size:.8rem;padding:.4rem .6rem}
+.entry{padding:1.1rem}.entry header{flex-direction:column;gap:.1rem}
+.facts{grid-template-columns:1fr 1fr;gap:.8rem}.figs{grid-template-columns:1fr}
+.proj-head{padding:1.2rem 0}.prose p{max-width:none}
+}
 </style></head><body><nav><div class="wrap"><strong><a href="index.html">Riley Beaudion</a></strong><ul><li><a href="index.html#projects">Projects</a></li><li><a href="index.html#cad">CAD</a></li><li><a href="index.html#experience">Experience</a></li><li><a href="index.html#contact">Contact</a></li></ul></div></nav><header class="hero"><div class="wrap"><h1>Riley Beaudion</h1><div class="role">Mechanical Engineering student, Stevens Institute of Technology</div><p>Hoboken, New Jersey. Expected graduation May 2029. SolidWorks, C++ and hands-on team projects, from an autonomous rover to a self-watering plant system.</p><div class="btns"><a class="btn primary" href="#projects">See my projects</a><a class="btn" href="Riley_Beaudion_Resume.pdf">Resume (PDF)</a><a class="btn" href="https://www.linkedin.com/in/riley-beaudion-599a6838a" rel="noopener">LinkedIn</a></div></div></header><main>
 <section id="projects"><div class="wrap"><h2>Projects</h2>
 <a class="card-link" href="projects/ultrasonic-rover.html"><img src="images/r-side.jpg" alt="Ultrasonic rover with its 3D printed sensor mount"><div class="t"><h3>Ultrasonic Rover</h3><span class="org">Group L1-4, ENGR 112</span><p>An autonomous rover with a custom 3D printed attachment that navigates to four waypoints using live coordinates over MQTT. It finished the final course in 1 minute 37 seconds with zero collisions.</p><span class="more">View project details</span></div></a>
